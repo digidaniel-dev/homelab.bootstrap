@@ -5,9 +5,9 @@ module "main-node" {
     proxmox.ssh = proxmox.ssh
   }
 
-  node_name             = "gryffindor"
+  node_name             = var.node
   email                 = var.email
-  dns_domain            = "home.wollbro.se"
+  dns_domain            = var.dns_domain
   dns_servers           = var.dns_servers
   cloudflare_api_token  = var.cloudflare_api_token
   cloudflare_account_id = var.cloudflare_account_id

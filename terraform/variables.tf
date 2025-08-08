@@ -4,6 +4,10 @@ variable "endpoint" {
   type = string
 }
 
+variable "node" {
+  type = string
+}
+
 // Proxmox ACME Plugin
 
 variable "cloudflare_account_id" {
@@ -27,6 +31,10 @@ variable "email" {
 variable "dns_servers" {
   type      = list(string)
   sensitive = true
+}
+
+variable "dns_domain" {
+  type = string
 }
 
 // SSH provider
